@@ -1,0 +1,147 @@
+Classfile /Users/g.kamnev/code/my-b/demo-s-lambda/intro/target/test-classes/sample/Sample1.class
+  Last modified 25 мая 2022 г.; size 1449 bytes
+  MD5 checksum 757161fb6dcaf215318a39d085305ebd
+  Compiled from "Sample1.java"
+public class sample.Sample1
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #6                          // sample/Sample1
+  super_class: #7                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #7.#30         // java/lang/Object."<init>":()V
+   #2 = Methodref          #6.#31         // sample/Sample1.square:(II)I
+   #3 = InvokeDynamic      #0:#37         // #0:apply:()Ljava/util/function/BiFunction;
+   #4 = Methodref          #38.#39        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #5 = InterfaceMethodref #40.#41        // java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #6 = Class              #42            // sample/Sample1
+   #7 = Class              #43            // java/lang/Object
+   #8 = Utf8               <init>
+   #9 = Utf8               ()V
+  #10 = Utf8               Code
+  #11 = Utf8               LineNumberTable
+  #12 = Utf8               LocalVariableTable
+  #13 = Utf8               this
+  #14 = Utf8               Lsample/Sample1;
+  #15 = Utf8               square
+  #16 = Utf8               (II)I
+  #17 = Utf8               num
+  #18 = Utf8               I
+  #19 = Utf8               a
+  #20 = Utf8               main
+  #21 = Utf8               ([Ljava/lang/String;)V
+  #22 = Utf8               args
+  #23 = Utf8               [Ljava/lang/String;
+  #24 = Utf8               f_ptr
+  #25 = Utf8               Ljava/util/function/BiFunction;
+  #26 = Utf8               LocalVariableTypeTable
+  #27 = Utf8               Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+  #28 = Utf8               SourceFile
+  #29 = Utf8               Sample1.java
+  #30 = NameAndType        #8:#9          // "<init>":()V
+  #31 = NameAndType        #15:#16        // square:(II)I
+  #32 = Utf8               BootstrapMethods
+  #33 = MethodHandle       6:#44          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #34 = MethodType         #45            //  (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #35 = MethodHandle       6:#2           // REF_invokeStatic sample/Sample1.square:(II)I
+  #36 = MethodType         #46            //  (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #37 = NameAndType        #47:#48        // apply:()Ljava/util/function/BiFunction;
+  #38 = Class              #49            // java/lang/Integer
+  #39 = NameAndType        #50:#51        // valueOf:(I)Ljava/lang/Integer;
+  #40 = Class              #52            // java/util/function/BiFunction
+  #41 = NameAndType        #47:#45        // apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #42 = Utf8               sample/Sample1
+  #43 = Utf8               java/lang/Object
+  #44 = Methodref          #53.#54        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #45 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #46 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #47 = Utf8               apply
+  #48 = Utf8               ()Ljava/util/function/BiFunction;
+  #49 = Utf8               java/lang/Integer
+  #50 = Utf8               valueOf
+  #51 = Utf8               (I)Ljava/lang/Integer;
+  #52 = Utf8               java/util/function/BiFunction
+  #53 = Class              #55            // java/lang/invoke/LambdaMetafactory
+  #54 = NameAndType        #56:#60        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #55 = Utf8               java/lang/invoke/LambdaMetafactory
+  #56 = Utf8               metafactory
+  #57 = Class              #62            // java/lang/invoke/MethodHandles$Lookup
+  #58 = Utf8               Lookup
+  #59 = Utf8               InnerClasses
+  #60 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #61 = Class              #63            // java/lang/invoke/MethodHandles
+  #62 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #63 = Utf8               java/lang/invoke/MethodHandles
+{
+  public sample.Sample1();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lsample/Sample1;
+
+  public static int square(int, int);
+    descriptor: (II)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: imul
+         3: ireturn
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0   num   I
+            0       4     1     a   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: bipush        10
+         2: bipush        11
+         4: invokestatic  #2                  // Method square:(II)I
+         7: pop
+         8: invokedynamic #3,  0              // InvokeDynamic #0:apply:()Ljava/util/function/BiFunction;
+        13: astore_1
+        14: aload_1
+        15: bipush        12
+        17: invokestatic  #4                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        20: bipush        14
+        22: invokestatic  #4                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        25: invokeinterface #5,  3            // InterfaceMethod java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        30: pop
+        31: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+        line 13: 14
+        line 14: 31
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      32     0  args   [Ljava/lang/String;
+           14      18     1 f_ptr   Ljava/util/function/BiFunction;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           14      18     1 f_ptr   Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+}
+SourceFile: "Sample1.java"
+InnerClasses:
+  public static final #58= #57 of #61;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #33 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #34 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #35 REF_invokeStatic sample/Sample1.square:(II)I
+      #36 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
