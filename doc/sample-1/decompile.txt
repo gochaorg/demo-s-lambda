@@ -1,5 +1,5 @@
 Classfile /Users/g.kamnev/code/my-b/demo-s-lambda/intro/target/test-classes/sample/Sample1.class
-  Last modified 25 мая 2022 г.; size 1449 bytes
+  Last modified 7 июн. 2022 г.; size 1449 bytes
   MD5 checksum 757161fb6dcaf215318a39d085305ebd
   Compiled from "Sample1.java"
 public class sample.Sample1

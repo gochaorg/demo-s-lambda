@@ -1,0 +1,649 @@
+Classfile /Users/g.kamnev/code/my-b/demo-s-lambda/intro/target/test-classes/sample/Sample6.class
+  Last modified 7 июн. 2022 г.; size 5021 bytes
+  MD5 checksum 7eefdc1595804f386386bbcd5823e80b
+  Compiled from "Sample6.java"
+public class sample.Sample6
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #59                         // sample/Sample6
+  super_class: #18                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 5, attributes: 3
+Constant pool:
+    #1 = Methodref          #18.#106      // java/lang/Object."<init>":()V
+    #2 = Methodref          #59.#107      // sample/Sample6.square:(II)I
+    #3 = InvokeDynamic      #0:#115       // #0:apply:()Ljava/util/function/BiFunction;
+    #4 = Class              #116          // java/io/Serializable
+    #5 = Class              #117          // java/util/function/BiFunction
+    #6 = String             #67           // square
+    #7 = InvokeDynamic      #1:#119       // #1:apply:(Ljava/lang/String;Ljava/util/function/BiFunction;)Ljava/util/function/BiFunction;
+    #8 = Methodref          #58.#120      // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    #9 = InterfaceMethodref #5.#121       // java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #10 = Fieldref           #122.#123     // java/lang/System.out:Ljava/io/PrintStream;
+   #11 = Methodref          #18.#124      // java/lang/Object.getClass:()Ljava/lang/Class;
+   #12 = Methodref          #95.#125      // java/io/PrintStream.println:(Ljava/lang/Object;)V
+   #13 = Methodref          #95.#126      // java/io/PrintStream.println:(Z)V
+   #14 = String             #127          // writeReplace
+   #15 = Class              #128          // java/lang/Class
+   #16 = Methodref          #15.#129      // java/lang/Class.getDeclaredMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+   #17 = Methodref          #94.#130      // java/lang/reflect/Method.setAccessible:(Z)V
+   #18 = Class              #131          // java/lang/Object
+   #19 = Methodref          #94.#132      // java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+   #20 = Class              #133          // java/lang/invoke/SerializedLambda
+   #21 = Methodref          #20.#134      // java/lang/invoke/SerializedLambda.getImplMethodKind:()I
+   #22 = InvokeDynamic      #2:#137       // #2:makeConcatWithConstants:(I)Ljava/lang/String;
+   #23 = Methodref          #95.#138      // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #24 = Methodref          #20.#139      // java/lang/invoke/SerializedLambda.getImplClass:()Ljava/lang/String;
+   #25 = InvokeDynamic      #3:#141       // #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+   #26 = Methodref          #20.#142      // java/lang/invoke/SerializedLambda.getImplMethodName:()Ljava/lang/String;
+   #27 = InvokeDynamic      #4:#141       // #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+   #28 = Methodref          #20.#144      // java/lang/invoke/SerializedLambda.getImplMethodSignature:()Ljava/lang/String;
+   #29 = InvokeDynamic      #5:#141       // #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+   #30 = String             #146          // capture:
+   #31 = Methodref          #20.#147      // java/lang/invoke/SerializedLambda.getCapturedArgCount:()I
+   #32 = Methodref          #20.#148      // java/lang/invoke/SerializedLambda.getCapturedArg:(I)Ljava/lang/Object;
+   #33 = InvokeDynamic      #6:#150       // #6:makeConcatWithConstants:(Ljava/lang/Class;)Ljava/lang/String;
+   #34 = String             #151          //
+   #35 = InvokeDynamic      #7:#153       // #7:makeConcatWithConstants:(ILjava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+   #36 = Class              #154          // java/lang/NoSuchMethodException
+   #37 = Class              #155          // java/lang/IllegalAccessException
+   #38 = Class              #156          // java/lang/reflect/InvocationTargetException
+   #39 = Methodref          #96.#157      // java/lang/ReflectiveOperationException.printStackTrace:()V
+   #40 = Methodref          #53.#158      // java/lang/String.hashCode:()I
+   #41 = Methodref          #53.#159      // java/lang/String.equals:(Ljava/lang/Object;)Z
+   #42 = String             #100          // lambda$main$5668327$1
+   #43 = Methodref          #20.#160      // java/lang/invoke/SerializedLambda.getFunctionalInterfaceClass:()Ljava/lang/String;
+   #44 = String             #117          // java/util/function/BiFunction
+   #45 = Methodref          #18.#159      // java/lang/Object.equals:(Ljava/lang/Object;)Z
+   #46 = Methodref          #20.#161      // java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodName:()Ljava/lang/String;
+   #47 = String             #162          // apply
+   #48 = Methodref          #20.#163      // java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodSignature:()Ljava/lang/String;
+   #49 = String             #164          // (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   #50 = String             #165          // sample/Sample6
+   #51 = String             #68           // (II)I
+   #52 = String             #101          // (Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+   #53 = Class              #166          // java/lang/String
+   #54 = Class              #167          // java/lang/IllegalArgumentException
+   #55 = String             #168          // Invalid lambda deserialization
+   #56 = Methodref          #54.#169      // java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+   #57 = InvokeDynamic      #8:#171       // #8:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/String;
+   #58 = Class              #172          // java/lang/Integer
+   #59 = Class              #165          // sample/Sample6
+   #60 = Utf8               <init>
+   #61 = Utf8               ()V
+   #62 = Utf8               Code
+   #63 = Utf8               LineNumberTable
+   #64 = Utf8               LocalVariableTable
+   #65 = Utf8               this
+   #66 = Utf8               Lsample/Sample6;
+   #67 = Utf8               square
+   #68 = Utf8               (II)I
+   #69 = Utf8               num
+   #70 = Utf8               I
+   #71 = Utf8               a
+   #72 = Utf8               main
+   #73 = Utf8               ([Ljava/lang/String;)V
+   #74 = Utf8               arg
+   #75 = Utf8               Ljava/lang/Object;
+   #76 = Utf8               ci
+   #77 = Utf8               meth
+   #78 = Utf8               Ljava/lang/reflect/Method;
+   #79 = Utf8               sl
+   #80 = Utf8               Ljava/lang/invoke/SerializedLambda;
+   #81 = Utf8               e
+   #82 = Utf8               Ljava/lang/ReflectiveOperationException;
+   #83 = Utf8               args
+   #84 = Utf8               [Ljava/lang/String;
+   #85 = Utf8               source
+   #86 = Utf8               Ljava/util/function/BiFunction;
+   #87 = Utf8               name
+   #88 = Utf8               Ljava/lang/String;
+   #89 = Utf8               f_ptr
+   #90 = Utf8               LocalVariableTypeTable
+   #91 = Utf8               Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+   #92 = Utf8               StackMapTable
+   #93 = Class              #84           // "[Ljava/lang/String;"
+   #94 = Class              #173          // java/lang/reflect/Method
+   #95 = Class              #174          // java/io/PrintStream
+   #96 = Class              #175          // java/lang/ReflectiveOperationException
+   #97 = Utf8               $deserializeLambda$
+   #98 = Utf8               (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+   #99 = Utf8               lambda
+  #100 = Utf8               lambda$main$5668327$1
+  #101 = Utf8               (Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #102 = Utf8               Ljava/lang/Integer;
+  #103 = Utf8               b
+  #104 = Utf8               SourceFile
+  #105 = Utf8               Sample6.java
+  #106 = NameAndType        #60:#61       // "<init>":()V
+  #107 = NameAndType        #67:#68       // square:(II)I
+  #108 = Utf8               BootstrapMethods
+  #109 = MethodHandle       6:#176        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #110 = MethodType         #164          //  (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #111 = MethodHandle       6:#2          // REF_invokeStatic sample/Sample6.square:(II)I
+  #112 = MethodType         #177          //  (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #113 = Integer            5
+  #114 = Integer            0
+  #115 = NameAndType        #162:#178     // apply:()Ljava/util/function/BiFunction;
+  #116 = Utf8               java/io/Serializable
+  #117 = Utf8               java/util/function/BiFunction
+  #118 = MethodHandle       6:#179        // REF_invokeStatic sample/Sample6.lambda$main$5668327$1:(Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #119 = NameAndType        #162:#180     // apply:(Ljava/lang/String;Ljava/util/function/BiFunction;)Ljava/util/function/BiFunction;
+  #120 = NameAndType        #181:#182     // valueOf:(I)Ljava/lang/Integer;
+  #121 = NameAndType        #162:#164     // apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #122 = Class              #183          // java/lang/System
+  #123 = NameAndType        #184:#185     // out:Ljava/io/PrintStream;
+  #124 = NameAndType        #186:#187     // getClass:()Ljava/lang/Class;
+  #125 = NameAndType        #188:#189     // println:(Ljava/lang/Object;)V
+  #126 = NameAndType        #188:#190     // println:(Z)V
+  #127 = Utf8               writeReplace
+  #128 = Utf8               java/lang/Class
+  #129 = NameAndType        #191:#192     // getDeclaredMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  #130 = NameAndType        #193:#190     // setAccessible:(Z)V
+  #131 = Utf8               java/lang/Object
+  #132 = NameAndType        #194:#195     // invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #133 = Utf8               java/lang/invoke/SerializedLambda
+  #134 = NameAndType        #196:#197     // getImplMethodKind:()I
+  #135 = MethodHandle       6:#198        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #136 = String             #199          // impl kind \u0001
+  #137 = NameAndType        #200:#201     // makeConcatWithConstants:(I)Ljava/lang/String;
+  #138 = NameAndType        #188:#202     // println:(Ljava/lang/String;)V
+  #139 = NameAndType        #203:#204     // getImplClass:()Ljava/lang/String;
+  #140 = String             #205          // impl class \u0001
+  #141 = NameAndType        #200:#206     // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #142 = NameAndType        #207:#204     // getImplMethodName:()Ljava/lang/String;
+  #143 = String             #208          // impl meth \u0001
+  #144 = NameAndType        #209:#204     // getImplMethodSignature:()Ljava/lang/String;
+  #145 = String             #210          // impl m.sign \u0001
+  #146 = Utf8               capture:
+  #147 = NameAndType        #211:#197     // getCapturedArgCount:()I
+  #148 = NameAndType        #212:#213     // getCapturedArg:(I)Ljava/lang/Object;
+  #149 = String             #214          //  \u0001
+  #150 = NameAndType        #200:#215     // makeConcatWithConstants:(Ljava/lang/Class;)Ljava/lang/String;
+  #151 = Utf8
+  #152 = String             #216          //   [\u0001] value=\"\u0001\"\u0001
+  #153 = NameAndType        #200:#217     // makeConcatWithConstants:(ILjava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+  #154 = Utf8               java/lang/NoSuchMethodException
+  #155 = Utf8               java/lang/IllegalAccessException
+  #156 = Utf8               java/lang/reflect/InvocationTargetException
+  #157 = NameAndType        #218:#61      // printStackTrace:()V
+  #158 = NameAndType        #219:#197     // hashCode:()I
+  #159 = NameAndType        #220:#221     // equals:(Ljava/lang/Object;)Z
+  #160 = NameAndType        #222:#204     // getFunctionalInterfaceClass:()Ljava/lang/String;
+  #161 = NameAndType        #223:#204     // getFunctionalInterfaceMethodName:()Ljava/lang/String;
+  #162 = Utf8               apply
+  #163 = NameAndType        #224:#204     // getFunctionalInterfaceMethodSignature:()Ljava/lang/String;
+  #164 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #165 = Utf8               sample/Sample6
+  #166 = Utf8               java/lang/String
+  #167 = Utf8               java/lang/IllegalArgumentException
+  #168 = Utf8               Invalid lambda deserialization
+  #169 = NameAndType        #60:#202      // "<init>":(Ljava/lang/String;)V
+  #170 = String             #225          // \u0001 \u0001, \u0001
+  #171 = NameAndType        #200:#226     // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/String;
+  #172 = Utf8               java/lang/Integer
+  #173 = Utf8               java/lang/reflect/Method
+  #174 = Utf8               java/io/PrintStream
+  #175 = Utf8               java/lang/ReflectiveOperationException
+  #176 = Methodref          #227.#228     // java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #177 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #178 = Utf8               ()Ljava/util/function/BiFunction;
+  #179 = Methodref          #59.#229      // sample/Sample6.lambda$main$5668327$1:(Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #180 = Utf8               (Ljava/lang/String;Ljava/util/function/BiFunction;)Ljava/util/function/BiFunction;
+  #181 = Utf8               valueOf
+  #182 = Utf8               (I)Ljava/lang/Integer;
+  #183 = Utf8               java/lang/System
+  #184 = Utf8               out
+  #185 = Utf8               Ljava/io/PrintStream;
+  #186 = Utf8               getClass
+  #187 = Utf8               ()Ljava/lang/Class;
+  #188 = Utf8               println
+  #189 = Utf8               (Ljava/lang/Object;)V
+  #190 = Utf8               (Z)V
+  #191 = Utf8               getDeclaredMethod
+  #192 = Utf8               (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  #193 = Utf8               setAccessible
+  #194 = Utf8               invoke
+  #195 = Utf8               (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #196 = Utf8               getImplMethodKind
+  #197 = Utf8               ()I
+  #198 = Methodref          #230.#231     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #199 = Utf8               impl kind \u0001
+  #200 = Utf8               makeConcatWithConstants
+  #201 = Utf8               (I)Ljava/lang/String;
+  #202 = Utf8               (Ljava/lang/String;)V
+  #203 = Utf8               getImplClass
+  #204 = Utf8               ()Ljava/lang/String;
+  #205 = Utf8               impl class \u0001
+  #206 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #207 = Utf8               getImplMethodName
+  #208 = Utf8               impl meth \u0001
+  #209 = Utf8               getImplMethodSignature
+  #210 = Utf8               impl m.sign \u0001
+  #211 = Utf8               getCapturedArgCount
+  #212 = Utf8               getCapturedArg
+  #213 = Utf8               (I)Ljava/lang/Object;
+  #214 = Utf8                \u0001
+  #215 = Utf8               (Ljava/lang/Class;)Ljava/lang/String;
+  #216 = Utf8                 [\u0001] value=\"\u0001\"\u0001
+  #217 = Utf8               (ILjava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+  #218 = Utf8               printStackTrace
+  #219 = Utf8               hashCode
+  #220 = Utf8               equals
+  #221 = Utf8               (Ljava/lang/Object;)Z
+  #222 = Utf8               getFunctionalInterfaceClass
+  #223 = Utf8               getFunctionalInterfaceMethodName
+  #224 = Utf8               getFunctionalInterfaceMethodSignature
+  #225 = Utf8               \u0001 \u0001, \u0001
+  #226 = Utf8               (Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/String;
+  #227 = Class              #232          // java/lang/invoke/LambdaMetafactory
+  #228 = NameAndType        #233:#237     // altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #229 = NameAndType        #100:#101     // lambda$main$5668327$1:(Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #230 = Class              #238          // java/lang/invoke/StringConcatFactory
+  #231 = NameAndType        #200:#239     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #232 = Utf8               java/lang/invoke/LambdaMetafactory
+  #233 = Utf8               altMetafactory
+  #234 = Class              #241          // java/lang/invoke/MethodHandles$Lookup
+  #235 = Utf8               Lookup
+  #236 = Utf8               InnerClasses
+  #237 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #238 = Utf8               java/lang/invoke/StringConcatFactory
+  #239 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #240 = Class              #242          // java/lang/invoke/MethodHandles
+  #241 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #242 = Utf8               java/lang/invoke/MethodHandles
+{
+  public sample.Sample6();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lsample/Sample6;
+
+  public static int square(int, int);
+    descriptor: (II)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: imul
+         3: ireturn
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0   num   I
+            0       4     1     a   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=8, args_size=1
+         0: bipush        10
+         2: bipush        11
+         4: invokestatic  #2                  // Method square:(II)I
+         7: pop
+         8: invokedynamic #3,  0              // InvokeDynamic #0:apply:()Ljava/util/function/BiFunction;
+        13: checkcast     #4                  // class java/io/Serializable
+        16: checkcast     #5                  // class java/util/function/BiFunction
+        19: astore_1
+        20: ldc           #6                  // String square
+        22: astore_2
+        23: aload_2
+        24: aload_1
+        25: invokedynamic #7,  0              // InvokeDynamic #1:apply:(Ljava/lang/String;Ljava/util/function/BiFunction;)Ljava/util/function/BiFunction;
+        30: checkcast     #4                  // class java/io/Serializable
+        33: checkcast     #5                  // class java/util/function/BiFunction
+        36: astore_3
+        37: aload_3
+        38: bipush        12
+        40: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        43: bipush        14
+        45: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        48: invokeinterface #9,  3            // InterfaceMethod java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        53: pop
+        54: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        57: aload_3
+        58: invokevirtual #11                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        61: invokevirtual #12                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        64: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        67: aload_3
+        68: instanceof    #4                  // class java/io/Serializable
+        71: invokevirtual #13                 // Method java/io/PrintStream.println:(Z)V
+        74: aload_3
+        75: invokevirtual #11                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        78: ldc           #14                 // String writeReplace
+        80: iconst_0
+        81: anewarray     #15                 // class java/lang/Class
+        84: invokevirtual #16                 // Method java/lang/Class.getDeclaredMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+        87: astore        4
+        89: aload         4
+        91: iconst_1
+        92: invokevirtual #17                 // Method java/lang/reflect/Method.setAccessible:(Z)V
+        95: aload         4
+        97: aload_3
+        98: iconst_0
+        99: anewarray     #18                 // class java/lang/Object
+       102: invokevirtual #19                 // Method java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+       105: checkcast     #20                 // class java/lang/invoke/SerializedLambda
+       108: astore        5
+       110: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       113: aload         5
+       115: invokevirtual #21                 // Method java/lang/invoke/SerializedLambda.getImplMethodKind:()I
+       118: invokedynamic #22,  0             // InvokeDynamic #2:makeConcatWithConstants:(I)Ljava/lang/String;
+       123: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       126: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       129: aload         5
+       131: invokevirtual #24                 // Method java/lang/invoke/SerializedLambda.getImplClass:()Ljava/lang/String;
+       134: invokedynamic #25,  0             // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       139: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       142: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       145: aload         5
+       147: invokevirtual #26                 // Method java/lang/invoke/SerializedLambda.getImplMethodName:()Ljava/lang/String;
+       150: invokedynamic #27,  0             // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       155: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       158: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       161: aload         5
+       163: invokevirtual #28                 // Method java/lang/invoke/SerializedLambda.getImplMethodSignature:()Ljava/lang/String;
+       166: invokedynamic #29,  0             // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       171: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       174: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       177: ldc           #30                 // String capture:
+       179: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       182: iconst_0
+       183: istore        6
+       185: iload         6
+       187: aload         5
+       189: invokevirtual #31                 // Method java/lang/invoke/SerializedLambda.getCapturedArgCount:()I
+       192: if_icmpge     245
+       195: aload         5
+       197: iload         6
+       199: invokevirtual #32                 // Method java/lang/invoke/SerializedLambda.getCapturedArg:(I)Ljava/lang/Object;
+       202: astore        7
+       204: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       207: iload         6
+       209: aload         7
+       211: aload         7
+       213: ifnull        229
+       216: aload         7
+       218: invokevirtual #11                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       221: invokedynamic #33,  0             // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/Class;)Ljava/lang/String;
+       226: goto          231
+       229: ldc           #34                 // String
+       231: invokedynamic #35,  0             // InvokeDynamic #7:makeConcatWithConstants:(ILjava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+       236: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       239: iinc          6, 1
+       242: goto          185
+       245: goto          255
+       248: astore        4
+       250: aload         4
+       252: invokevirtual #39                 // Method java/lang/ReflectiveOperationException.printStackTrace:()V
+       255: return
+      Exception table:
+         from    to  target type
+            74   245   248   Class java/lang/NoSuchMethodException
+            74   245   248   Class java/lang/IllegalAccessException
+            74   245   248   Class java/lang/reflect/InvocationTargetException
+      LineNumberTable:
+        line 14: 0
+        line 16: 8
+        line 18: 20
+        line 19: 23
+        line 23: 37
+        line 25: 54
+        line 28: 64
+        line 30: 74
+        line 31: 89
+        line 32: 95
+        line 33: 110
+        line 34: 126
+        line 35: 142
+        line 36: 158
+        line 37: 174
+        line 38: 182
+        line 39: 195
+        line 40: 204
+        line 38: 239
+        line 44: 245
+        line 42: 248
+        line 43: 250
+        line 45: 255
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          204      35     7   arg   Ljava/lang/Object;
+          185      60     6    ci   I
+           89     156     4  meth   Ljava/lang/reflect/Method;
+          110     135     5    sl   Ljava/lang/invoke/SerializedLambda;
+          250       5     4     e   Ljava/lang/ReflectiveOperationException;
+            0     256     0  args   [Ljava/lang/String;
+           20     236     1 source   Ljava/util/function/BiFunction;
+           23     233     2  name   Ljava/lang/String;
+           37     219     3 f_ptr   Ljava/util/function/BiFunction;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           20     236     1 source   Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+           37     219     3 f_ptr   Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;>;
+      StackMapTable: number_of_entries = 6
+        frame_type = 255 /* full_frame */
+          offset_delta = 185
+          locals = [ class "[Ljava/lang/String;", class java/util/function/BiFunction, class java/lang/String, class java/util/function/BiFunction, class java/lang/reflect/Method, class java/lang/invoke/SerializedLambda, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 43
+          locals = [ class "[Ljava/lang/String;", class java/util/function/BiFunction, class java/lang/String, class java/util/function/BiFunction, class java/lang/reflect/Method, class java/lang/invoke/SerializedLambda, int, class java/lang/Object ]
+          stack = [ class java/io/PrintStream, int, class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 1
+          locals = [ class "[Ljava/lang/String;", class java/util/function/BiFunction, class java/lang/String, class java/util/function/BiFunction, class java/lang/reflect/Method, class java/lang/invoke/SerializedLambda, int, class java/lang/Object ]
+          stack = [ class java/io/PrintStream, int, class java/lang/Object, class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 13
+          locals = [ class "[Ljava/lang/String;", class java/util/function/BiFunction, class java/lang/String, class java/util/function/BiFunction ]
+          stack = []
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/lang/ReflectiveOperationException ]
+        frame_type = 6 /* same */
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: aload_0
+         1: invokevirtual #26                 // Method java/lang/invoke/SerializedLambda.getImplMethodName:()Ljava/lang/String;
+         4: astore_1
+         5: iconst_m1
+         6: istore_2
+         7: aload_1
+         8: invokevirtual #40                 // Method java/lang/String.hashCode:()I
+        11: lookupswitch  { // 2
+             -1309466028: 50
+              -894674659: 36
+                 default: 61
+            }
+        36: aload_1
+        37: ldc           #6                  // String square
+        39: invokevirtual #41                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        42: ifeq          61
+        45: iconst_0
+        46: istore_2
+        47: goto          61
+        50: aload_1
+        51: ldc           #42                 // String lambda$main$5668327$1
+        53: invokevirtual #41                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        56: ifeq          61
+        59: iconst_1
+        60: istore_2
+        61: iload_2
+        62: lookupswitch  { // 2
+                       0: 88
+                       1: 163
+                 default: 254
+            }
+        88: aload_0
+        89: invokevirtual #21                 // Method java/lang/invoke/SerializedLambda.getImplMethodKind:()I
+        92: bipush        6
+        94: if_icmpne     254
+        97: aload_0
+        98: invokevirtual #43                 // Method java/lang/invoke/SerializedLambda.getFunctionalInterfaceClass:()Ljava/lang/String;
+       101: ldc           #44                 // String java/util/function/BiFunction
+       103: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       106: ifeq          254
+       109: aload_0
+       110: invokevirtual #46                 // Method java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodName:()Ljava/lang/String;
+       113: ldc           #47                 // String apply
+       115: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       118: ifeq          254
+       121: aload_0
+       122: invokevirtual #48                 // Method java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodSignature:()Ljava/lang/String;
+       125: ldc           #49                 // String (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       127: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       130: ifeq          254
+       133: aload_0
+       134: invokevirtual #24                 // Method java/lang/invoke/SerializedLambda.getImplClass:()Ljava/lang/String;
+       137: ldc           #50                 // String sample/Sample6
+       139: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       142: ifeq          254
+       145: aload_0
+       146: invokevirtual #28                 // Method java/lang/invoke/SerializedLambda.getImplMethodSignature:()Ljava/lang/String;
+       149: ldc           #51                 // String (II)I
+       151: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       154: ifeq          254
+       157: invokedynamic #3,  0              // InvokeDynamic #0:apply:()Ljava/util/function/BiFunction;
+       162: areturn
+       163: aload_0
+       164: invokevirtual #21                 // Method java/lang/invoke/SerializedLambda.getImplMethodKind:()I
+       167: bipush        6
+       169: if_icmpne     254
+       172: aload_0
+       173: invokevirtual #43                 // Method java/lang/invoke/SerializedLambda.getFunctionalInterfaceClass:()Ljava/lang/String;
+       176: ldc           #44                 // String java/util/function/BiFunction
+       178: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       181: ifeq          254
+       184: aload_0
+       185: invokevirtual #46                 // Method java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodName:()Ljava/lang/String;
+       188: ldc           #47                 // String apply
+       190: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       193: ifeq          254
+       196: aload_0
+       197: invokevirtual #48                 // Method java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodSignature:()Ljava/lang/String;
+       200: ldc           #49                 // String (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       202: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       205: ifeq          254
+       208: aload_0
+       209: invokevirtual #24                 // Method java/lang/invoke/SerializedLambda.getImplClass:()Ljava/lang/String;
+       212: ldc           #50                 // String sample/Sample6
+       214: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       217: ifeq          254
+       220: aload_0
+       221: invokevirtual #28                 // Method java/lang/invoke/SerializedLambda.getImplMethodSignature:()Ljava/lang/String;
+       224: ldc           #52                 // String (Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+       226: invokevirtual #45                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       229: ifeq          254
+       232: aload_0
+       233: iconst_0
+       234: invokevirtual #32                 // Method java/lang/invoke/SerializedLambda.getCapturedArg:(I)Ljava/lang/Object;
+       237: checkcast     #53                 // class java/lang/String
+       240: aload_0
+       241: iconst_1
+       242: invokevirtual #32                 // Method java/lang/invoke/SerializedLambda.getCapturedArg:(I)Ljava/lang/Object;
+       245: checkcast     #5                  // class java/util/function/BiFunction
+       248: invokedynamic #7,  0              // InvokeDynamic #1:apply:(Ljava/lang/String;Ljava/util/function/BiFunction;)Ljava/util/function/BiFunction;
+       253: areturn
+       254: new           #54                 // class java/lang/IllegalArgumentException
+       257: dup
+       258: ldc           #55                 // String Invalid lambda deserialization
+       260: invokespecial #56                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       263: athrow
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     264     0 lambda   Ljava/lang/invoke/SerializedLambda;
+      StackMapTable: number_of_entries = 6
+        frame_type = 253 /* append */
+          offset_delta = 36
+          locals = [ class java/lang/String, int ]
+        frame_type = 13 /* same */
+        frame_type = 10 /* same */
+        frame_type = 26 /* same */
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 74
+        frame_type = 249 /* chop */
+          offset_delta = 90
+
+  private static java.lang.Integer lambda$main$5668327$1(java.lang.String, java.util.function.BiFunction, java.lang.Integer, java.lang.Integer);
+    descriptor: (Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=4, args_size=4
+         0: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: aload_2
+         5: aload_3
+         6: invokedynamic #57,  0             // InvokeDynamic #8:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/String;
+        11: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        14: aload_1
+        15: aload_2
+        16: aload_3
+        17: invokeinterface #9,  3            // InterfaceMethod java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        22: checkcast     #58                 // class java/lang/Integer
+        25: areturn
+      LineNumberTable:
+        line 20: 0
+        line 21: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      26     0  name   Ljava/lang/String;
+            0      26     1 source   Ljava/util/function/BiFunction;
+            0      26     2     a   Ljava/lang/Integer;
+            0      26     3     b   Ljava/lang/Integer;
+}
+SourceFile: "Sample6.java"
+InnerClasses:
+  public static final #235= #234 of #240; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #109 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #110 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #111 REF_invokeStatic sample/Sample6.square:(II)I
+      #112 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+      #113 5
+      #114 0
+  1: #109 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #110 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      #118 REF_invokeStatic sample/Sample6.lambda$main$5668327$1:(Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+      #112 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+      #113 5
+      #114 0
+  2: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #136 impl kind \u0001
+  3: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #140 impl class \u0001
+  4: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #143 impl meth \u0001
+  5: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #145 impl m.sign \u0001
+  6: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #149  \u0001
+  7: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #152   [\u0001] value=\"\u0001\"\u0001
+  8: #135 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #170 \u0001 \u0001, \u0001

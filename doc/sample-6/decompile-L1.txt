@@ -1,0 +1,109 @@
+Classfile /Users/g.kamnev/code/my-b/demo-s-lambda/intro/target/generated-proxy/sample/Sample6$$Lambda$1.class
+  Last modified 7 июн. 2022 г.; size 939 bytes
+  MD5 checksum f3d7189d4782038af38203ee8358ba3d
+final class sample.Sample6$$Lambda$1 implements java.util.function.BiFunction,java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: (0x1030) ACC_FINAL, ACC_SUPER, ACC_SYNTHETIC
+  this_class: #2                          // sample/Sample6$$Lambda$1
+  super_class: #4                         // java/lang/Object
+  interfaces: 2, fields: 0, methods: 3, attributes: 0
+Constant pool:
+   #1 = Utf8               sample/Sample6$$Lambda$1
+   #2 = Class              #1             // sample/Sample6$$Lambda$1
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               java/util/function/BiFunction
+   #6 = Class              #5             // java/util/function/BiFunction
+   #7 = Utf8               java/io/Serializable
+   #8 = Class              #7             // java/io/Serializable
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = NameAndType        #9:#10         // "<init>":()V
+  #12 = Methodref          #4.#11         // java/lang/Object."<init>":()V
+  #13 = Utf8               apply
+  #14 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #15 = Utf8               Ljava/lang/invoke/LambdaForm$Hidden;
+  #16 = Utf8               java/lang/Integer
+  #17 = Class              #16            // java/lang/Integer
+  #18 = Utf8               intValue
+  #19 = Utf8               ()I
+  #20 = NameAndType        #18:#19        // intValue:()I
+  #21 = Methodref          #17.#20        // java/lang/Integer.intValue:()I
+  #22 = Utf8               sample/Sample6
+  #23 = Class              #22            // sample/Sample6
+  #24 = Utf8               square
+  #25 = Utf8               (II)I
+  #26 = NameAndType        #24:#25        // square:(II)I
+  #27 = Methodref          #23.#26        // sample/Sample6.square:(II)I
+  #28 = Utf8               valueOf
+  #29 = Utf8               (I)Ljava/lang/Integer;
+  #30 = NameAndType        #28:#29        // valueOf:(I)Ljava/lang/Integer;
+  #31 = Methodref          #17.#30        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #32 = Utf8               writeReplace
+  #33 = Utf8               ()Ljava/lang/Object;
+  #34 = Utf8               java/lang/invoke/SerializedLambda
+  #35 = Class              #34            // java/lang/invoke/SerializedLambda
+  #36 = String             #5             // java/util/function/BiFunction
+  #37 = String             #13            // apply
+  #38 = String             #14            // (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #39 = Integer            6
+  #40 = String             #22            // sample/Sample6
+  #41 = String             #24            // square
+  #42 = String             #25            // (II)I
+  #43 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #44 = String             #43            // (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #45 = Utf8               (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+  #46 = NameAndType        #9:#45         // "<init>":(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+  #47 = Methodref          #35.#46        // java/lang/invoke/SerializedLambda."<init>":(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+  #48 = Utf8               Code
+  #49 = Utf8               RuntimeVisibleAnnotations
+{
+  private sample.Sample6$$Lambda$1();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #12                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public java.lang.Object apply(java.lang.Object, java.lang.Object);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_1
+         1: checkcast     #17                 // class java/lang/Integer
+         4: invokevirtual #21                 // Method java/lang/Integer.intValue:()I
+         7: aload_2
+         8: checkcast     #17                 // class java/lang/Integer
+        11: invokevirtual #21                 // Method java/lang/Integer.intValue:()I
+        14: invokestatic  #27                 // Method sample/Sample6.square:(II)I
+        17: invokestatic  #31                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        20: areturn
+    RuntimeVisibleAnnotations:
+      0: #15()
+        java.lang.invoke.LambdaForm$Hidden
+
+  private final java.lang.Object writeReplace();
+    descriptor: ()Ljava/lang/Object;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Code:
+      stack=12, locals=1, args_size=1
+         0: new           #35                 // class java/lang/invoke/SerializedLambda
+         3: dup
+         4: ldc           #23                 // class sample/Sample6
+         6: ldc           #36                 // String java/util/function/BiFunction
+         8: ldc           #37                 // String apply
+        10: ldc           #38                 // String (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        12: ldc           #39                 // int 6
+        14: ldc           #40                 // String sample/Sample6
+        16: ldc           #41                 // String square
+        18: ldc           #42                 // String (II)I
+        20: ldc           #44                 // String (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+        22: iconst_0
+        23: anewarray     #4                  // class java/lang/Object
+        26: invokespecial #47                 // Method java/lang/invoke/SerializedLambda."<init>":(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+        29: areturn
+}
