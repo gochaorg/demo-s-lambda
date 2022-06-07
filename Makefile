@@ -5,6 +5,9 @@ JAVAP=javap -v -constants -c -s -p
 SAMPLE1_CLS=intro/target/test-classes/sample/Sample1.class
 SAMPLE1_TXT=doc/sample-1/decompile.txt
 
+COMPILE_FIES_DIR=doc/compiled_files
+COMPILE_FIES=$(COMPILE_FIES_DIR)/list.txt
+
 all: check_requirements compile_samples
 	echo 1
 
@@ -26,3 +29,9 @@ $(SAMPLE1_TXT): check_java
 	$(JAVAP) $(SAMPLE1_CLS) > $(SAMPLE1_TXT)
 
 decompile: $(SAMPLE1_TXT)
+
+$(COMPILE_FIES): compile_samples
+	mkdir -p $(COMPILE_FIES_DIR)
+	find intro/target/test-classes/sample > $(COMPILE_FIES)
+
+doc_samples: $(COMPILE_FIES) decompile $(SAMPLE1_TXT)
