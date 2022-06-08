@@ -1,5 +1,5 @@
 Classfile /Users/g.kamnev/code/my-b/demo-s-lambda/intro/target/generated-proxy/sample/Sample6$$Lambda$2.class
-  Last modified 7 июн. 2022 г.; size 1314 bytes
+  Last modified 8 июн. 2022 г.; size 1314 bytes
   MD5 checksum b5fa370b2c4574dd88f6854740762e35
 final class sample.Sample6$$Lambda$2 implements java.util.function.BiFunction,java.io.Serializable
   minor version: 0

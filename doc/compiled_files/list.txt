@@ -6,3 +6,4 @@ intro/target/test-classes/sample/Sample5.class
 intro/target/test-classes/sample/Sample2$LogCall.class
 intro/target/test-classes/sample/Sample2.class
 intro/target/test-classes/sample/Sample4.class
+intro/target/test-classes/sample/Sample6.class
