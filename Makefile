@@ -63,8 +63,10 @@ gen_proxy: compile_samples
 	mkdir -p intro/target/generated-proxy
 	java -Djdk.internal.lambda.dumpProxyClasses=intro/target/generated-proxy -cp "intro/target/test-classes" sample.Sample6
 
-$(SAMPLE6_L1_CLS): gen_proxy
+	mkdir -p intro/target/generated-proxy2
+	java -Djdk.internal.lambda.dumpProxyClasses=intro/target/generated-proxy2 -cp "intro/target/test-classes" sample.Sample5
 
+$(SAMPLE6_L1_CLS): gen_proxy
 $(SAMPLE6_L2_CLS): gen_proxy
 
 $(SAMPLE6_L1_TXT): $(SAMPLE6_L1_CLS)
