@@ -12,6 +12,7 @@
     <modules>
         <module>intro</module>
         <module>trambda-demo</module>
+        <module>lazy-value-demo</module>
     </modules>
 
     <properties>

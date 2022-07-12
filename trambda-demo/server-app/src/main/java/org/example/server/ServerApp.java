@@ -1,4 +1,4 @@
-package org.example;
+package org.example.server;
 
 import org.example.api.OSInfo;
 import xyz.cofe.trambda.sec.SecurityFilters;
